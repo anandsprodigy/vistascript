@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string",
+      "required": true
+    },
+    "productId": {
+      "type": "uid",
+      "required": true
+    },
+    "productMRP": {
+      "type": "decimal",
+      "required": true
+    },
+    "productCategory": {
+      "type": "enumeration",
+      "enum": [
+        "MDF Cutout",
+        "Lipon Art",
+        "Key Chain",
+        "Fridge Magnet"
+      ],
+      "required": true
+    },
+    "productImages": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
